@@ -15,13 +15,11 @@ depends=('curl')  # used by `delphi rmbg` for the one-time model download
 source_x86_64=("${_pkgname}-${pkgver}-x86_64.tar.xz::${url}/releases/download/v${pkgver}/${_pkgname}-x86_64-unknown-linux-gnu.tar.xz")
 source_aarch64=("${_pkgname}-${pkgver}-aarch64.tar.xz::${url}/releases/download/v${pkgver}/${_pkgname}-aarch64-unknown-linux-gnu.tar.xz")
 
-# Filled in at AUR-publish time: the v${pkgver} tarballs only exist after the
-# git tag is pushed and cargo-dist has built the GitHub Release. Once it has,
-# run `updpkgsums` here (or copy the two -unknown-linux-gnu lines from
-# https://github.com/1612elphi/delphitools-cli/releases/download/v${pkgver}/sha256.sum)
-# to replace these SKIPs, then regenerate .SRCINFO before pushing to AUR.
-sha256sums_x86_64=('SKIP')
-sha256sums_aarch64=('SKIP')
+# sha256 of the published v${pkgver} release tarballs (from the release's
+# sha256.sum). On each new release, refresh with `updpkgsums` after the
+# GitHub Release is built, then regenerate .SRCINFO before pushing to AUR.
+sha256sums_x86_64=('261b9daf5951c8aba022b746e495c8b9d39b7d6e18161e829609afdf50ca10b0')
+sha256sums_aarch64=('ca4168beba276b871cc97d361050f2266cca7d45ce73c8dd16c7badc0e0910e0')
 
 package() {
   case "$CARCH" in
