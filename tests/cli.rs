@@ -200,7 +200,7 @@ fn version_flag() {
     let (out, _, code) = delphi(&["--version"]);
     assert_eq!(code, 0);
     assert!(out.contains("delphi"));
-    assert!(out.contains("0.1.0"));
+    assert!(out.contains(env!("CARGO_PKG_VERSION")));
 }
 
 // --- no args shows the tasting menu, `?` and `help` show full help ---

@@ -1,0 +1,19 @@
+.ie \n(.g .ds Aq \(aq
+.el .ds Aq '
+.TH DELPHI-INSTALL-MAN 1  "delphitools-cli 0.2.0" "delphitools manual"
+.SH NAME
+install\-man \- Install the bundled man pages so `man delphi` works
+.SH SYNOPSIS
+\fBinstall\-man\fR [\fB\-\-dir\fR] [\fB\-\-dry\-run\fR] [\fB\-h\fR|\fB\-\-help\fR] 
+.SH DESCRIPTION
+Install the bundled man pages so `man delphi` works
+.SH OPTIONS
+.TP
+\fB\-\-dir\fR \fI<DIR>\fR
+Write to this directory instead of the default (`$HOME/.local/share/man/man1`)
+.TP
+\fB\-\-dry\-run\fR
+Print the paths that would be written without writing anything
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Print help

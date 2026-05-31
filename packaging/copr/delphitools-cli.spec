@@ -1,5 +1,5 @@
 Name:           delphitools-cli
-Version:        0.1.0
+Version:        0.2.0
 Release:        1%{?dist}
 Summary:        indie toolkit for designers — colour, image, PDF, type, calc, all in one offline CLI
 
@@ -61,6 +61,10 @@ install -Dm 0644 LICENSE %{buildroot}%{_licensedir}/%{name}/LICENSE
 %{_mandir}/man1/delphi-*.1*
 
 %changelog
+* Sun May 31 2026 Ruby Morgan Voigt <rmv@rmv.fyi> - 0.2.0-1
+- Update to upstream 0.2.0: zine imposer gains an accordion (concertina) fold
+  with selectable panel count, double-sided output, and two-up (--split).
+
 * Sun May 24 2026 Ruby Morgan Voigt <rmv@rmv.fyi> - 0.1.0-1
 - Initial package: linux x86_64 and aarch64 binaries built upstream by
   cargo-dist, packaged here for the Fedora/EPEL ecosystem.
