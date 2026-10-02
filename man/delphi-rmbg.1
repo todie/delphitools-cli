@@ -1,13 +1,16 @@
 .ie \n(.g .ds Aq \(aq
 .el .ds Aq '
-.TH DELPHI-RMBG 1  "delphitools-cli 0.1.0" "delphitools manual"
+.TH DELPHI-RMBG 1  "delphitools-cli 0.2.0" "delphitools manual"
 .SH NAME
-rmbg \- Remove background from an image
+rmbg \- Remove background from an image (downloads a ~170 MB Apache\-licensed ONNX model on first use)
 .SH SYNOPSIS
-\fBrmbg\fR [\fB\-h\fR|\fB\-\-help\fR] [\fIIMAGES\fR] 
+\fBrmbg\fR [\fB\-\-approve\fR] [\fB\-h\fR|\fB\-\-help\fR] [\fIIMAGES\fR] 
 .SH DESCRIPTION
-Remove background from an image
+Remove background from an image (downloads a ~170 MB Apache\-licensed ONNX model on first use)
 .SH OPTIONS
+.TP
+\fB\-\-approve\fR
+Pre\-approve the one\-time model download (required in non\-interactive mode)
 .TP
 \fB\-h\fR, \fB\-\-help\fR
 Print help

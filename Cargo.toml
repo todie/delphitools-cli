@@ -1,6 +1,6 @@
 [package]
 name = "delphitools-cli"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "delphitools CLI — indie toolkit for designers (colour, image, PDF, type, calc)"
 license = "0BSD"
