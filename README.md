@@ -69,7 +69,7 @@ man delphi          man page
 ### print & production
 
 - pdf preflight (`preflight`)
-- zine imposer (`zine`)
+- zine imposer (`zine`) — mini-8 & accordion folds
 - print imposer (`impose`) — saddle-stitch, perfect-bind, n-up
 
 ### other tools

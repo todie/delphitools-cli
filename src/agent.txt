@@ -121,4 +121,4 @@ GOTCHAS FOR AGENTS
   - For batch tools, `-o` must be a directory when multiple inputs are given.
 
 VERSION
-  delphi --version    →  delphi 0.1.0
+  delphi --version    →  delphi 0.2.0
